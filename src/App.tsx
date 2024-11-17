@@ -40,6 +40,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Menu from './components/Menu';
 import Tabs from './pages/Tabs';
+import Pay from './pages/Pay';
 
 setupIonicReact();
 
@@ -49,6 +50,9 @@ const App: React.FC = () => (
       <IonSplitPane contentId="main" style={{ '--side-max-width': '20%' }}>
         <Menu />
         <IonRouterOutlet id="main">
+          <Route exact path="/pay">
+            <Pay />
+          </Route>
           <Route path="/">
             <Tabs />
           </Route>

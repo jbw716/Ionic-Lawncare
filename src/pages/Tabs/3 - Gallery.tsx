@@ -1,8 +1,8 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
-import './1 - Home.css';
+import './3 - Gallery.css';
 
-const Home: React.FC = () => {
+const Gallery: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -10,19 +10,19 @@ const Home: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton></IonMenuButton>
           </IonButtons>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>Gallery</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
+            <IonTitle size="large">Gallery</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Home page" />
+        <ExploreContainer name="Gallery page" />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default Gallery;

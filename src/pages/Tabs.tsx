@@ -1,39 +1,47 @@
-import { IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel, IonPage } from '@ionic/react';
-import { triangle, ellipse, square } from 'ionicons/icons';
+import { IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
+import { home, list, documentText, grid } from 'ionicons/icons';
 import { Redirect, Route } from 'react-router';
 import './Tabs.css';
-import Tab1 from './Tabs/1 - Home';
-import Tab2 from './Tabs/2 - Services';
-import Tab3 from './Tabs/4 - Pay';
+import Home from './Tabs/1 - Home';
+import Services from './Tabs/2 - Services';
+import Quote from './Tabs/4 - Quote';
+import Gallery from './Tabs/3 - Gallery';
 
 const Tabs: React.FC = () => (
   <IonTabs>
     <IonRouterOutlet>
-      <Route exact path="/tab1">
-        <Tab1 />
+      <Route exact path="/home">
+        <Home />
       </Route>
-      <Route exact path="/tab2">
-        <Tab2 />
+      <Route exact path="/services">
+        <Services />
       </Route>
-      <Route exact path="/tab3">
-        <Tab3 />
+      <Route exact path="/gallery">
+        <Gallery />
+      </Route>
+      <Route exact path="/quote">
+        <Quote />
       </Route>
       <Route exact path="/">
-        <Redirect to="/tab1" />
+        <Redirect to="/home" />
       </Route>
     </IonRouterOutlet>
     <IonTabBar slot="bottom">
-      <IonTabButton tab="tab1" href="/tab1">
-        <IonIcon aria-hidden="true" icon={triangle} />
-        <IonLabel>Tab 1</IonLabel>
+      <IonTabButton tab="home" href="/home">
+        <IonIcon aria-hidden="true" icon={home} />
+        <IonLabel>Home</IonLabel>
       </IonTabButton>
-      <IonTabButton tab="tab2" href="/tab2">
-        <IonIcon aria-hidden="true" icon={ellipse} />
-        <IonLabel>Tab 2</IonLabel>
+      <IonTabButton tab="services" href="/services">
+        <IonIcon aria-hidden="true" icon={list} />
+        <IonLabel>Services</IonLabel>
       </IonTabButton>
-      <IonTabButton tab="tab3" href="/tab3">
-        <IonIcon aria-hidden="true" icon={square} />
-        <IonLabel>Tab 3</IonLabel>
+      <IonTabButton tab="gallery" href="/gallery">
+        <IonIcon aria-hidden="true" icon={grid} />
+        <IonLabel>Gallery</IonLabel>
+      </IonTabButton>
+      <IonTabButton tab="quote" href="/quote">
+        <IonIcon aria-hidden="true" icon={documentText} />
+        <IonLabel>Quote</IonLabel>
       </IonTabButton>
     </IonTabBar>
   </IonTabs>
