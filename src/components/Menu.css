@@ -15,14 +15,6 @@ ion-menu.md ion-content {
   --padding-bottom: 20px;
 }
 
-ion-menu.md ion-list {
-  padding: 20px 0;
-}
-
-ion-menu.md ion-note {
-  margin-bottom: 30px;
-}
-
 ion-menu.md ion-list-header,
 ion-menu.md ion-note {
   padding-left: 10px;
@@ -35,7 +27,6 @@ ion-menu.md ion-list#nav-list ion-list-header {
 }
 
 ion-menu.md ion-item {
-  --padding-start: 10px;
   --padding-end: 10px;
   border-radius: 4px;
 }
@@ -58,10 +49,6 @@ ion-menu.md ion-item ion-label {
 
 ion-menu.ios ion-content {
   --padding-bottom: 20px;
-}
-
-ion-menu.ios ion-list {
-  padding: 20px 0 0 0;
 }
 
 ion-menu.ios ion-note {

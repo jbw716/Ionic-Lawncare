@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Pay.css';
 
@@ -8,7 +8,7 @@ const Pay: React.FC = () => {
       <IonHeader>
         <IonToolbar color="primary">
           <IonButtons slot="start">
-            <IonMenuButton></IonMenuButton>
+            <IonBackButton></IonBackButton>
           </IonButtons>
           <IonTitle>Payment</IonTitle>
         </IonToolbar>

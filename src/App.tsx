@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
   IonRouterOutlet,
@@ -53,8 +53,11 @@ const App: React.FC = () => (
           <Route exact path="/pay">
             <Pay />
           </Route>
-          <Route path="/">
+          <Route path="/tabs">
             <Tabs />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/tabs/home" />
           </Route>
         </IonRouterOutlet>
       </IonSplitPane>

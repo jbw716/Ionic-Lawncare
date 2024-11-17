@@ -12,37 +12,37 @@ const Tabs: React.FC = () => {
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Route exact path="/home">
+        <Route exact path="/tabs/home">
           <Home />
         </Route>
-        <Route exact path="/services">
+        <Route exact path="/tabs/services">
           <Services />
         </Route>
-        <Route exact path="/gallery">
+        <Route exact path="/tabs/gallery">
           <Gallery />
         </Route>
-        <Route exact path="/quote">
+        <Route exact path="/tabs/quote">
           <Quote />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
+        <Route exact path="/tabs">
+          <Redirect to="/tabs/home" />
         </Route>
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
-        <IonTabButton tab="home" href="/home">
-          <IonIcon aria-hidden="true" icon={location.pathname === "/home" ? home : homeOutline} />
+        <IonTabButton tab="home" href="/tabs/home">
+          <IonIcon aria-hidden="true" icon={location.pathname === "/tabs/home" || location.pathname === "/tabs" ? home : homeOutline} />
           <IonLabel>Home</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="services" href="/services">
-          <IonIcon aria-hidden="true" icon={location.pathname === "/services" ? list : listOutline} />
+        <IonTabButton tab="services" href="/tabs/services">
+          <IonIcon aria-hidden="true" icon={location.pathname === "/tabs/services" ? list : listOutline} />
           <IonLabel>Services</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="gallery" href="/gallery">
-          <IonIcon aria-hidden="true" icon={location.pathname === "/gallery" ? grid : gridOutline} />
+        <IonTabButton tab="gallery" href="/tabs/gallery">
+          <IonIcon aria-hidden="true" icon={location.pathname === "/tabs/gallery" ? grid : gridOutline} />
           <IonLabel>Gallery</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="quote" href="/quote">
-          <IonIcon aria-hidden="true" icon={location.pathname === "/quote" ? documentText : documentTextOutline} />
+        <IonTabButton tab="quote" href="/tabs/quote">
+          <IonIcon aria-hidden="true" icon={location.pathname === "/tabs/quote" ? documentText : documentTextOutline} />
           <IonLabel>Quote</IonLabel>
         </IonTabButton>
       </IonTabBar>
