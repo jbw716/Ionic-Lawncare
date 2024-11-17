@@ -13,12 +13,7 @@ const Services: React.FC = () => {
           <IonTitle>Services</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Services</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent>
         <ExploreContainer name="Services page" />
       </IonContent>
     </IonPage>

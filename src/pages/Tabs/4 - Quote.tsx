@@ -13,12 +13,7 @@ const Quote: React.FC = () => {
           <IonTitle>Get a Quote</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Get a Quote</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent>
         <ExploreContainer name="Get a Quote page" />
       </IonContent>
     </IonPage>

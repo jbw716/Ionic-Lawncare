@@ -13,12 +13,7 @@ const Gallery: React.FC = () => {
           <IonTitle>Gallery</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Gallery</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent>
         <ExploreContainer name="Gallery page" />
       </IonContent>
     </IonPage>
