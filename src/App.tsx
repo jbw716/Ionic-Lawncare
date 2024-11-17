@@ -46,7 +46,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonSplitPane contentId="main">
+      <IonSplitPane contentId="main" style={{ '--side-max-width': '20%' }}>
         <Menu />
         <IonRouterOutlet id="main">
           <Route path="/">
