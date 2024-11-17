@@ -2,9 +2,9 @@ import { IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel, I
 import { triangle, ellipse, square } from 'ionicons/icons';
 import { Redirect, Route } from 'react-router';
 import './Tabs.css';
-import Tab1 from './Tab1';
-import Tab2 from './Tab2';
-import Tab3 from './Tab3';
+import Tab1 from './Tabs/1 - Home';
+import Tab2 from './Tabs/2 - Services';
+import Tab3 from './Tabs/4 - Pay';
 
 const Tabs: React.FC = () => (
   <IonTabs>

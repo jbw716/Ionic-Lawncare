@@ -1,6 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import ExploreContainer from '../../components/ExploreContainer';
+import './4 - Pay.css';
 
 const Tab3: React.FC = () => {
   return (
