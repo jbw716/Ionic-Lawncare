@@ -11,40 +11,40 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, documentTextOutline, documentTextSharp, gridOutline, gridSharp, heartOutline, heartSharp, homeOutline, homeSharp, listOutline, listSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { documentText, documentTextOutline, grid, gridOutline, home, homeOutline, list, listOutline } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
-  url: string;
-  iosIcon: string;
-  mdIcon: string;
   title: string;
+  url: string;
+  icon: string;
+  selectedIcon: string;
 }
 
 const appPages: AppPage[] = [
   {
     title: 'Home',
     url: '/home',
-    iosIcon: homeOutline,
-    mdIcon: homeSharp
+    icon: homeOutline,
+    selectedIcon: home
   },
   {
     title: 'Services',
     url: '/services',
-    iosIcon: listOutline,
-    mdIcon: listSharp
+    icon: listOutline,
+    selectedIcon: list
   },
   {
     title: 'Gallery',
     url: '/gallery',
-    iosIcon: gridOutline,
-    mdIcon: gridSharp
+    icon: gridOutline,
+    selectedIcon: grid
   },
   {
     title: 'Quote',
     url: '/quote',
-    iosIcon: documentTextOutline,
-    mdIcon: documentTextSharp
+    icon: documentTextOutline,
+    selectedIcon: documentText
   }
 ];
 
@@ -62,7 +62,7 @@ const Menu: React.FC = () => {
               return (
                 <IonMenuToggle key={index} autoHide={false}>
                   <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                    <IonIcon aria-hidden="true" slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
+                    <IonIcon aria-hidden="true" slot="start" icon={location.pathname === appPage.url ? appPage.selectedIcon : appPage.icon} />
                     <IonLabel>{appPage.title}</IonLabel>
                   </IonItem>
                 </IonMenuToggle>
