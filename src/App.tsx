@@ -50,19 +50,26 @@ const App: React.FC = () => (
       <IonSplitPane contentId="main" style={{ '--side-max-width': '20%' }}>
         <Menu />
         <IonRouterOutlet id="main">
-          <Route exact path="/pay">
+          <Route path="/pay">
             <Pay />
           </Route>
-          <Route path="/tabs">
+          <Route path="/home">
             <Tabs />
           </Route>
-          <Route exact path="/">
-            <Redirect to="/tabs/home" />
+          <Route path="/services">
+            <Tabs />
           </Route>
+          <Route path="/gallery">
+            <Tabs />
+          </Route>
+          <Route path="/quote">
+            <Tabs />
+          </Route>
+          <Redirect exact from="/" to="/home"></Redirect>
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>
-  </IonApp >
+  </IonApp>
 );
 
 export default App;

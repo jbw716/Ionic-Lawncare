@@ -24,25 +24,25 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '/tabs/home',
+    url: '/home',
     icon: homeOutline,
     selectedIcon: home
   },
   {
     title: 'Services',
-    url: '/tabs/services',
+    url: '/services',
     icon: listOutline,
     selectedIcon: list
   },
   {
     title: 'Gallery',
-    url: '/tabs/gallery',
+    url: '/gallery',
     icon: gridOutline,
     selectedIcon: grid
   },
   {
     title: 'Quote',
-    url: '/tabs/quote',
+    url: '/quote',
     icon: documentTextOutline,
     selectedIcon: documentText
   }
