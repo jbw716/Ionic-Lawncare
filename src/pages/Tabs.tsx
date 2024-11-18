@@ -24,7 +24,7 @@ const Tabs: React.FC = () => {
         <Route exact path="/quote">
           <Quote />
         </Route>
-        <Redirect exact from="/" to="/home" />
+        <Redirect to="/home" />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
         <IonTabButton tab="home" href="/home">

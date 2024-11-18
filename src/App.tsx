@@ -53,19 +53,9 @@ const App: React.FC = () => (
           <Route path="/pay">
             <Pay />
           </Route>
-          <Route path="/home">
+          <Route>
             <Tabs />
           </Route>
-          <Route path="/services">
-            <Tabs />
-          </Route>
-          <Route path="/gallery">
-            <Tabs />
-          </Route>
-          <Route path="/quote">
-            <Tabs />
-          </Route>
-          <Redirect exact from="/" to="/home"></Redirect>
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>
